@@ -1,0 +1,109 @@
+body{
+  width: 90%;
+  margin: 5% auto 0;
+  max-width: 1300px;
+}
+
+#navbar-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar-brand a{
+  padding-right: 1.5rem;
+}
+
+.container{
+  margin-bottom: 5%;
+}
+
+.container section{
+  margin-bottom: 5%;
+}
+
+.container .header .col-7{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container .header .col-5{
+  display: flex;
+  justify-content: center;
+}
+
+.container .header h1{
+  font-size: 3rem;
+  font-family: "Arial Rounded MT Bold";
+  margin-bottom: 2rem;
+}
+
+.container .header h2{
+  font-size: 2.3rem;
+  font-family: "Arial";
+  line-height: 3.5rem;
+}
+
+.container .header .col-5 img{
+  width: 50%;
+}
+
+.container .posts .row{
+  height: 35vh;
+  max-height: 250px;
+  justify-content: space-between;
+}
+
+.container > .posts > .row > .col-4{
+  width: 30%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: -.4rem .4rem 5px 3px rgba(0, 0, 0, .15);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+}
+
+.container .posts .row .col-4 .content{
+  width: auto;
+  max-height: 75%;
+  overflow: hidden;
+  margin: 1.25rem .75rem;
+  margin-bottom: .15625rem;
+  position: relative;
+}
+
+.content::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(transparent 10vh, white);
+}
+
+.container .posts .row .col-4 .details{
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: 0.9rem;
+  height: 10%;
+  margin: 0 .75rem;
+}
+
+.container .posts .row .col-4 .details div{
+  padding-left: 0;
+}
+
+.container .posts .row .col-4 .details .post-appreciation{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 1400px){
+  .container{
+    max-width: 1140px
+  }
+}
