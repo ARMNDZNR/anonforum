@@ -11,7 +11,12 @@ body{
 }
 
 #navbar-brand a{
-  padding-right: 1.5rem;
+  padding-right: 2rem;
+}
+
+#navbar-brand button{
+  padding: .375rem 1.5rem;
+  font-size: 1.3rem;
 }
 
 .container{
@@ -58,11 +63,19 @@ body{
   width: 30%;
   height: 100%;
   border-radius: 15px;
-  box-shadow: -.4rem .4rem 5px 3px rgba(0, 0, 0, .15);
+  box-shadow: -.4rem .4rem 5px 3px rgba(0, 0, 0, .1);
+  transition: box-shadow 0.15s ease-in;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   padding-bottom: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container > .posts > .row > .col-4:hover{
+  box-shadow: -.4rem .4rem 8px 4px rgba(0, 0, 0, .15);
+  transition: box-shadow 0.15s ease-out;
 }
 
 .container .posts .row .col-4 .content{

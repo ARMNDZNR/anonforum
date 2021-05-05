@@ -1,0 +1,61 @@
+body{
+  width: 90%;
+  margin: 5% auto 0;
+  max-width: 1300px;
+}
+
+#navbar-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar-brand a{
+  padding-right: 2rem;
+}
+
+#navbar-brand button{
+  padding: .375rem 1.5rem;
+  font-size: 1.3rem;
+}
+
+.container{
+  margin-bottom: 5%;
+}
+
+.container section{
+  margin-bottom: 3%;
+}
+
+.container .row h1{
+  font-size: 3rem;
+  font-family: "Arial Rounded MT Bold";
+}
+
+.container .row h6{
+  color: gray;
+  padding-left: 5px;
+}
+
+.container .content .row{
+  justify-content: space-between;
+}
+
+.container .content .row .post-appreciation{
+  max-height: 100px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.container .content .row .post-appreciation svg{
+  margin-right: 5px;
+}
+
+@media (min-width: 1400px){
+  .container{
+    max-width: 1140px
+  }
+}
